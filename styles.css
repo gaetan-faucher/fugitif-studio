@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@font-face {
+    font-family: 'Switzer-Regular';
+    src: url('FONT/WEB/fonts/Switzer-Regular.woff2') format('woff2'),
+         url('FONT/WEB/fonts/Switzer-Regular.woff') format('woff'),
+         url('FONT/WEB/fonts/Switzer-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Switzer-Regular', sans-serif;
+}
+
+::selection {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+/* Styles pour le curseur personnalisé */
+.custom-cursor {
+    position: fixed;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: 300; /* Light */
+    color: rgb(255, 0, 0);
+    transform: translate(-50%, -35%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.custom-cursor.hover-link {
+    font-size: 50px;
+
+}
+
+/* Cache le curseur par défaut */
+body, a, img {
+    cursor: none;
+}
+
+
+h1{
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 300; /* light */
+    font-style: italic;
+    font-variation-settings:
+      "SOFT" 0, /* arrondis */
+      "WONK" 0;
+      font-size: 15vw;
+      line-height: 0.75;
+      /*cursor: default; */
+    }
+
+h2{
+font-family: "Fraunces", serif;
+font-optical-sizing: auto;
+font-weight: 300; /* light */
+font-style: italic;
+font-variation-settings:
+  "SOFT" 0, /* arrondis */
+  "WONK" 0;
+  font-size: 4vw;
+  line-height: 1.2;
+  /*cursor: default;*/
+}
+
+h3{
+    font-family: 'Switzer-Regular', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Regular */
+    font-size: 17px;
+    }
+    
+h4 {
+    font-family: 'Switzer-Regular', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Regular */
+    font-size: 11px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.highlight {
+    color: red;
+}
+
+a:hover {
+    color: red;
+    transition: 0.2s ease-in-out;
+}
+
+header.header {
+    z-index: 10;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 74px;
+    top: 0;
+    flex-shrink: 0;
+}
+
+/* header.header h3 {
+    mix-blend-mode:difference;
+} */
+
+.header:hover {
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
+}
+
+nav {
+    display: flex;
+    list-style: none;
+}
+
+nav.nav1 {
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.logo {
+    height: 20px;
+}
+
+section.top-page {
+    margin-top: 74px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    background-color: rgb(255, 255, 255);
+}
+
+/* début code parallax */
+
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1; /* Assurez-vous que l'image de fond est derrière le texte */
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/* fin code parallax */
+
+.top-project-worth {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    height: 100vh;
+    /* début du code pour l'effet parallax */
+    position: relative;
+    overflow: hidden;
+    /* fin du code pour l'effet parallax */
+    /* background: url("../IMAGES/Projets/worth/WORTH_COUV-ticket-enlarged.jpg"); */
+    background-color: rgb(220, 220, 220);
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la section */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+}
+
+.top-project-memoire {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    height: 100vh;
+    /* début du code pour l'effet parallax */
+    position: relative;
+    overflow: hidden;
+    /* fin du code pour l'effet parallax */
+    /* background-image: url("../IMAGES/Projets/memoire/COUV_memoire-edition-empilement.jpg"); */
+    background-color: rgb(220, 220, 220);
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la section */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+    color: white;
+}
+
+.top-project-toh {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    height: 100vh;
+    /* début du code pour l'effet parallax */
+    position: relative;
+    overflow: hidden;
+    /* fin du code pour l'effet parallax */
+    /* background-image: url("../IMAGES/Projets/toh/COUV_visiting-card.jpg"); */
+    background-color: rgb(220, 220, 220);
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la section */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+}
+
+.top-project-gigantisme {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    height: 100vh;
+    /* début du code pour l'effet parallax */
+    position: relative;
+    overflow: hidden;
+    /* fin du code pour l'effet parallax */
+    /* background-image: url("../IMAGES/Projets/gigantisme/COUV_gigantisme-kit.jpg"); */
+    background-color: rgb(220, 220, 220);
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la section */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+}
+
+.top-project-villette {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    height: 100vh;
+    /* début du code pour l'effet parallax */
+    position: relative;
+    overflow: hidden;
+    /* fin du code pour l'effet parallax */
+    /* background-image: url("../IMAGES/Projets/villette/COUV_Villette-website.jpg"); */
+    background-color: rgb(220, 220, 220);
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la section */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+    color: white;
+}
+
+nav.nav2 {
+    align-items: end;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.entertainement {
+    flex-direction: column;
+    width: 100%;
+    /* début du code parallax */
+    position: relative;
+    z-index: 2;
+    /* fin du code parallax */
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.nav2 h1 {
+    width: 70%;
+}
+
+.project-category {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding-top: 3vw;
+    gap: 10px; /* Espace entre les éléments à l'intérieur */
+    width: 100%;
+    max-width: 700px;
+}
+
+a:hover {
+    color: red;
+    transition: 0.2s ease-in-out;
+    /*cursor: pointer;*/
+}
+
+.argumentation {
+    display: flex;
+    gap: 25px;
+    margin: 10vw 25px 10vw 25px;
+}
+
+.argumentation h2 {
+    width: 33vw;
+}
+
+.argumentation h3 {
+    width: 66vw;
+}
+
+.tryptique {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 0px 25px 25px 25px;
+}
+
+.tryptique-condensed {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 0px 25px 25px 25px;
+}
+
+.tryptique img {
+    width: 100%;
+}
+
+.tryptique-condensed img {
+    width: 100%;
+}
+
+.tryptique-cover {
+    grid-column: span 2;
+}
+
+.tryptique-cover-bigger {
+    grid-column: span 4;
+}
+
+.big-visual {
+    grid-column: 1/-1;
+}
+
+.detailed-visual {
+    grid-column: 2 / span 2;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+
+.detailed-explanations {
+    grid-column: 4 / span 2;
+    align-self: end;
+    margin-bottom: 10vw;
+}
+
+.detailed-explanations h2 {
+    margin-bottom: 25px;
+}
+
+.close-up {
+    grid-column: span 3;
+}
+
+.projets {
+    background-color: white;
+    margin-bottom: 120px;
+}
+
+.blank {
+    display: flex;
+}
+
+.memoire {
+    display: flex;
+    border-top: 1px solid rgb(220, 220, 220);
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.projets a {
+    display: flex;
+    width: 100%;
+}
+
+.projets h2 {
+    line-height: 0.85;
+}
+
+.memoire:hover {
+    color: red;
+    transition: 0.2s ease-in-out;
+}
+
+.performance {
+    display: flex;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.performance:hover {
+    color: red;
+    transition: 0.2s ease-in-out;
+}
+
+.toh {
+    display: flex;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.toh:hover {
+    color: red;
+    transition: 0.2s ease-in-out;
+}
+
+.gigantisme {
+    display: flex;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.gigantisme:hover {
+    color: red;
+    transition: 0.2s ease-in-out;
+}
+
+.villette {
+    display: flex;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.villette:hover {
+    color: red;
+    transition: 0.2s ease-in-out;
+}
+
+.vacances {
+    display: flex;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.vacances:hover {
+    color: red;
+    transition: 0.2s ease-in-out;
+}
+
+.virgil {
+    display: flex;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.virgil:hover {
+    color: red;
+    transition: 0.2s ease-in-out;
+}
+
+.lama {
+    display: flex;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.lama:hover {
+    color: red;
+    transition: 0.2s ease-in-out;
+}
+
+.description {
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+    margin: 25px;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.blank {
+    margin: 25px;
+}
+
+.download {
+    height: 70px;
+    color: red;
+}
+
+.download a {
+    color: red;
+}
+
+.download a:hover {
+    text-decoration: underline;
+}
+
+.aperçu {
+    display: flex;
+    height: 70px;
+    width: 50%;
+    margin: 25px;
+    align-self: center;
+    justify-content: space-evenly;
+}
+
+.footer {
+    display: flex;
+    height: 100vh;
+    top: 0;
+    flex-shrink: 0;
+    /* border-top: 1px solid rgb(220, 220, 220); */
+    background: linear-gradient(white, red);
+    color: white;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer a:hover {
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 80px 25px 25px 25px;
+    width: 100%;
+}
+
+.all-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.all-links a {
+    color: red;
+}
+
+#current-time {
+    font-family: 'Switzer-Regular', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Regular */
+    font-size: 17px;
+    color: red;
+}
+
+.citation {
+    grid-column: span 3;
+    color: red;
+}
+
+.links1 {
+    flex-direction: column;
+    grid-column: 4/5;
+}
+
+.links2 {
+    flex-direction: column;
+    grid-column: 2 5/6;
+    color: red;
+    line-height: 1.3;
+}
+
+.links3 {
+    flex-direction: column;
+    grid-column: 6/-1;
+    align-items: flex-end;
+}
+
+.nav4 {
+    margin: 25px 0px 0px 0px;
+    justify-content: space-between;
+}
+
+.bottom-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-footer a:hover {
+    text-decoration: underline;
+}
+
+.contact-link {
+    display: flex;
+    margin: 9vw 9vw 25px 9vw;
+}
+
+.contact-link h3 {
+    width: 50vw;
+    /*cursor: default;*/
+    margin: 0px 25px 0px 0px;
+}
+
+.contact-link img {
+    width: 40vw;
+}
