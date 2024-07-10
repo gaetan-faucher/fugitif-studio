@@ -554,11 +554,18 @@ a:hover {
     }
 
     .contact-link {
+        flex-direction: column;
         margin: 9vw 9vw 25vw 9vw;
+        gap: 4vw;
     }
 
     .contact-link h3 {
+        width: 100%;
         margin: 0px 2vw 0px 0px;
+    }
+
+    .contact-link img {
+        width: 100%;
     }
 
 
