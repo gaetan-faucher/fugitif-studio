@@ -253,10 +253,6 @@ a:hover {
     grid-column: span 2;
 }
 
-.tryptique-cover-bigger {
-    grid-column: span 4;
-}
-
 .big-visual {
     grid-column: 1/-1;
 }
@@ -580,6 +576,7 @@ a:hover {
 
     header.header {
         height: 45px;
+        margin-top: 2vw;
     }
 
     nav.nav1 {
@@ -618,6 +615,10 @@ a:hover {
         display: contents;
     }
 
+    .delete-txt {
+        display: none;
+    }
+
     .aperçu {
         justify-content: space-between;
         width: 100%;
@@ -644,6 +645,10 @@ a:hover {
         padding: 0px 3.5vw 3.5vw 3.5vw;
     }
 
+    .tryptique-cover {
+        grid-column: span 6;
+    }
+
     .close-up {
         grid-column: 1/-1;
     }
@@ -654,10 +659,12 @@ a:hover {
 
     .detailed-visual {
         grid-column: 1/-1;
+        margin: 0;
     }
 
     .detailed-explanations {
         grid-column: 1/-1;
+        margin: 10vw 0vw;
     }
 
     .blank {
