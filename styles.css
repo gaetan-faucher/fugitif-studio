@@ -98,13 +98,13 @@ a {
     color: black;
 }
 
-.highlight {
-    color: red;
-}
-
 a:hover {
     color: red;
     transition: 0.2s ease-in-out;
+}
+
+.highlight {
+    color: red;
 }
 
 header.header {
@@ -116,10 +116,6 @@ header.header {
     top: 0;
     flex-shrink: 0;
 }
-
-/* header.header h3 {
-    mix-blend-mode:difference;
-} */
 
 .header:hover {
     background-color: rgb(255, 255, 255);
@@ -166,7 +162,9 @@ section.top-page {
 
 /* fin code parallax */
 
-.top-project-worth {
+
+
+.top-project-memoire, .top-project-worth, .top-project-toh, .top-project-gigantisme, .top-project-villette, .top-project-jeux, .top-project-virgil, .top-project-lama {
     display: flex;
     justify-content: flex-end;
     align-items: end;
@@ -175,76 +173,13 @@ section.top-page {
     position: relative;
     overflow: hidden;
     /* fin du code pour l'effet parallax */
-    /* background: url("../IMAGES/Projets/worth/WORTH_COUV-ticket-enlarged.jpg"); */
     background-color: rgb(220, 220, 220);
     background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la section */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Évite la répétition de l'image */
 }
 
-.top-project-memoire {
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
-    height: 100vh;
-    /* début du code pour l'effet parallax */
-    position: relative;
-    overflow: hidden;
-    /* fin du code pour l'effet parallax */
-    /* background-image: url("../IMAGES/Projets/memoire/COUV_memoire-edition-empilement.jpg"); */
-    background-color: rgb(220, 220, 220);
-    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la section */
-    background-position: center; /* Centre l'image */
-    background-repeat: no-repeat; /* Évite la répétition de l'image */
-    color: white;
-}
-
-.top-project-toh {
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
-    height: 100vh;
-    /* début du code pour l'effet parallax */
-    position: relative;
-    overflow: hidden;
-    /* fin du code pour l'effet parallax */
-    /* background-image: url("../IMAGES/Projets/toh/COUV_visiting-card.jpg"); */
-    background-color: rgb(220, 220, 220);
-    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la section */
-    background-position: center; /* Centre l'image */
-    background-repeat: no-repeat; /* Évite la répétition de l'image */
-}
-
-.top-project-gigantisme {
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
-    height: 100vh;
-    /* début du code pour l'effet parallax */
-    position: relative;
-    overflow: hidden;
-    /* fin du code pour l'effet parallax */
-    /* background-image: url("../IMAGES/Projets/gigantisme/COUV_gigantisme-kit.jpg"); */
-    background-color: rgb(220, 220, 220);
-    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la section */
-    background-position: center; /* Centre l'image */
-    background-repeat: no-repeat; /* Évite la répétition de l'image */
-}
-
-.top-project-villette {
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
-    height: 100vh;
-    /* début du code pour l'effet parallax */
-    position: relative;
-    overflow: hidden;
-    /* fin du code pour l'effet parallax */
-    /* background-image: url("../IMAGES/Projets/villette/COUV_Villette-website.jpg"); */
-    background-color: rgb(220, 220, 220);
-    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la section */
-    background-position: center; /* Centre l'image */
-    background-repeat: no-repeat; /* Évite la répétition de l'image */
+.top-project-memoire, .top-project-villette, .top-project-virgil, .top-project-lama {
     color: white;
 }
 
@@ -302,7 +237,7 @@ a:hover {
     width: 66vw;
 }
 
-.tryptique {
+.tryptique, .tryptique-condensed {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: space-between;
@@ -310,19 +245,7 @@ a:hover {
     padding: 0px 25px 25px 25px;
 }
 
-.tryptique-condensed {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-content: space-between;
-    gap: 25px;
-    padding: 0px 25px 25px 25px;
-}
-
-.tryptique img {
-    width: 100%;
-}
-
-.tryptique-condensed img {
+.tryptique img, .tryptique-condensed img {
     width: 100%;
 }
 
@@ -365,6 +288,19 @@ a:hover {
 
 .blank {
     display: flex;
+    margin: 25px;
+}
+
+.download {
+    height: fit-content;
+}
+
+.download a {
+    color: red;
+}
+
+.download a:hover {
+    text-decoration: underline;
 }
 
 .memoire {
@@ -382,114 +318,35 @@ a:hover {
     line-height: 0.85;
 }
 
-.memoire:hover {
-    color: red;
-    transition: 0.2s ease-in-out;
-}
-
-.performance {
+.performance, .toh, .gigantisme, .villette, .vacances, .virgil, .lama {
     display: flex;
     border-bottom: 1px solid rgb(220, 220, 220);
-}
-
-.performance:hover {
-    color: red;
-    transition: 0.2s ease-in-out;
-}
-
-.toh {
-    display: flex;
-    border-bottom: 1px solid rgb(220, 220, 220);
-}
-
-.toh:hover {
-    color: red;
-    transition: 0.2s ease-in-out;
-}
-
-.gigantisme {
-    display: flex;
-    border-bottom: 1px solid rgb(220, 220, 220);
-}
-
-.gigantisme:hover {
-    color: red;
-    transition: 0.2s ease-in-out;
-}
-
-.villette {
-    display: flex;
-    border-bottom: 1px solid rgb(220, 220, 220);
-}
-
-.villette:hover {
-    color: red;
-    transition: 0.2s ease-in-out;
-}
-
-.vacances {
-    display: flex;
-    border-bottom: 1px solid rgb(220, 220, 220);
-}
-
-.vacances:hover {
-    color: red;
-    transition: 0.2s ease-in-out;
-}
-
-.virgil {
-    display: flex;
-    border-bottom: 1px solid rgb(220, 220, 220);
-}
-
-.virgil:hover {
-    color: red;
-    transition: 0.2s ease-in-out;
-}
-
-.lama {
-    display: flex;
-    border-bottom: 1px solid rgb(220, 220, 220);
-}
-
-.lama:hover {
-    color: red;
-    transition: 0.2s ease-in-out;
 }
 
 .description {
     display: flex;
     align-items: flex-end;
-    width: 50%;
+    width: 100%;
     margin: 25px;
     gap: 25px;
     flex-wrap: wrap;
 }
 
-.blank {
-    margin: 25px;
-}
-
-.download {
-    height: 70px;
-    color: red;
-}
-
-.download a {
-    color: red;
-}
-
-.download a:hover {
-    text-decoration: underline;
+.ajout-txt {
+    display: none;
 }
 
 .aperçu {
     display: flex;
     height: 70px;
-    width: 50%;
+    width: 100%;
     margin: 25px;
     align-self: center;
     justify-content: space-evenly;
+}
+
+.aperçu img {
+    max-height: 70px;
 }
 
 .footer {
@@ -597,7 +454,7 @@ a:hover {
 @media (max-width: 768px) {
 
     header.header {
-        height: 7vw;
+        height: 50px;
     }
 
     nav.nav1 {
@@ -625,12 +482,7 @@ a:hover {
         margin: 10vw 2vw 10vw 2vw;
     }
 
-    .tryptique {
-        gap: 2vw;
-        padding: 0px 2vw 2vw 2vw;
-    }
-    
-    .tryptique-condensed {
+    .tryptique, .tryptique-condensed {
         gap: 2vw;
         padding: 0px 2vw 2vw 2vw;
     }
@@ -640,15 +492,18 @@ a:hover {
     }
 
     .description {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
         margin: 2vw;
         gap: 2vw;
     }
 
-    .detailed-visual {
-        grid-column: span 3;
+    .ajout-txt {
+        display: contents;
     }
 
-    .detailed-explanations {
+    .detailed-visual .detailed-explanations {
         grid-column: span 3;
     }
 
@@ -657,8 +512,10 @@ a:hover {
     }
 
     .aperçu {
-        margin: 2vw;
-        height: 8vw;
+        justify-content: right;
+        width: 30%;
+        gap: 2vw;
+        margin: 4vw 2vw;
     }
 
     .container {
@@ -668,16 +525,12 @@ a:hover {
     h2{
         font-size: 4vw;
         }
-
-    h3{
-        font-size: 2vw;
-        }
         
     h4 {
         font-size: 1.5vw;
     }
 
-    #current-time {
+    #current-time h3 {
         font-size: 2vw;
     }
 
@@ -726,7 +579,7 @@ a:hover {
     }
 
     header.header {
-        height: 7vw;
+        height: 45px;
     }
 
     nav.nav1 {
@@ -754,18 +607,26 @@ a:hover {
     }
 
     .description {
-        width: 80%;
-        margin: 3.5vw;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0vw 0vw 3.5vw 0vw;
         gap: 3.5vw;
+        width: 100%;
+    }
+
+    .ajout-txt {
+        display: contents;
     }
 
     .aperçu {
-        margin: 3.5vw;
         justify-content: space-between;
+        width: 100%;
+        margin: 2vw;
     }
 
-    .memoire {
+    .memoire a, .performance a, .toh a, .gigantisme a, .villette a, .vacances a, .virgil a, .lama a {
         flex-direction: column;
+        margin: 3.5vw;
     }
 
     .argumentation {
@@ -774,20 +635,11 @@ a:hover {
         flex-direction: column;
     }
 
-    .argumentation h2 {
-        width: 100%;
-    }
-    
-    .argumentation h3 {
+    .argumentation h2, .argumentation h3 {
         width: 100%;
     }
 
-    .tryptique {
-        gap: 3.5vw;
-        padding: 0px 3.5vw 3.5vw 3.5vw;
-    }
-    
-    .tryptique-condensed {
+    .tryptique, .tryptique-condensed {
         gap: 3.5vw;
         padding: 0px 3.5vw 3.5vw 3.5vw;
     }
@@ -798,11 +650,6 @@ a:hover {
 
     .detailed-explanations h2 {
         margin-bottom: 3.5vw;
-    }
-
-    .description {
-        margin: 3.5vw;
-        gap: 3.5vw;
     }
 
     .detailed-visual {
@@ -826,23 +673,31 @@ a:hover {
     }
     
     h2{
-        font-size: 8vw;
+        font-size: 10vw;
         }
 
-    h3{
-        font-size: 3vw;
+    h3 #current-time {
+        font-size: 4vw;
         }
         
     h4 {
         font-size: 2vw;
     }
 
-    #current-time {
-        font-size: 3vw;
-    }
-
     .contact-link h3 {
         margin: 0px 3.5vw 0px 0px;
+    }
+
+    .links1, .links3 {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        margin: 10vw 0vw 10vw 0vw;
+    }
+    
+    .links2 {
+        align-items: flex-start;
+        grid-column: 1/-1;
+        grid-row: 3/4;
     }
 
 
