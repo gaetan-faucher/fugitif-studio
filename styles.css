@@ -537,7 +537,7 @@ a:hover {
     color: red;
 }
 
-.citation {
+.clock {
     grid-column: span 3;
     color: red;
 }
@@ -587,4 +587,130 @@ a:hover {
 
 .contact-link img {
     width: 40vw;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    header.header {
+        height: 7vw;
+    }
+
+    nav.nav1 {
+        padding: 2vw;
+    }
+
+    nav.nav2 {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-bottom: 2vw;
+    }
+
+    .nav4 {
+        margin: 2vw 0px 0px 0px;
+    }
+
+    .entertainement {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-bottom: 4vw;
+    }
+
+    .argumentation {
+        gap: 2vw;
+        margin: 10vw 2vw 10vw 2vw;
+    }
+
+    .tryptique {
+        gap: 2vw;
+        padding: 0px 2vw 2vw 2vw;
+    }
+    
+    .tryptique-condensed {
+        gap: 2vw;
+        padding: 0px 2vw 2vw 2vw;
+    }
+
+    .detailed-explanations h2 {
+        margin-bottom: 2vw;
+    }
+
+    .description {
+        margin: 2vw;
+        gap: 2vw;
+    }
+
+    .detailed-visual {
+        grid-column: span 3;
+    }
+
+    .detailed-explanations {
+        grid-column: span 3;
+    }
+
+    .blank {
+        margin: 2vw;
+    }
+
+    .aperçu {
+        margin: 2vw;
+        height: 8vw;
+    }
+
+    .container {
+        margin: 80px 2vw 2vw 2vw;
+    }
+
+    h2{
+        font-size: 4vw;
+        }
+
+    h3{
+        font-size: 2vw;
+        }
+        
+    h4 {
+        font-size: 1.5vw;
+    }
+
+    #current-time {
+        font-size: 2vw;
+    }
+
+    .bottom-footer h1 {
+        font-size: 26.5vw;
+    }
+
+    .links1 {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    .links2 {
+        grid-column: 4/-1;
+        align-items: flex-end;
+    }
+    
+    .links3 {
+        grid-column: 4/-1;
+        grid-row: 2/3;
+    }
+
+    .all-links {
+        gap: 4vw;
+    }
+
+    .contact-link {
+        margin: 9vw 9vw 25vw 9vw;
+    }
+
+    .contact-link h3 {
+        margin: 0px 2vw 0px 0px;
+    }
+
+
 }
