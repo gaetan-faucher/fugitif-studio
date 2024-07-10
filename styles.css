@@ -714,3 +714,132 @@ a:hover {
 
 
 }
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .custom-cursor {
+        display: none;
+    }
+
+    header.header {
+        height: 7vw;
+    }
+
+    nav.nav1 {
+        padding: 3vw;
+    }
+
+    nav.nav2 {
+        padding-left: 3.5vw;
+        padding-right: 3.5vw;
+        padding-bottom: 3.5vw;
+    }
+
+    .nav4 {
+        margin: 3.5vw 0px 0px 0px;
+    }
+
+    .entertainement {
+        padding-left: 3.5vw;
+        padding-right: 3.5vw;
+        padding-bottom: 3.5vw;
+    }
+
+    .description {
+        width: 80%;
+        margin: 3.5vw;
+        gap: 3.5vw;
+    }
+
+    .aperçu {
+        margin: 3.5vw;
+        justify-content: space-between;
+    }
+
+    .memoire {
+        flex-direction: column;
+    }
+
+    .argumentation {
+        gap: 3.5vw;
+        margin: 10vw 3.5vw 10vw 3.5vw;
+        flex-direction: column;
+    }
+
+    .argumentation h2 {
+        width: 100%;
+    }
+    
+    .argumentation h3 {
+        width: 100%;
+    }
+
+    .tryptique {
+        gap: 3.5vw;
+        padding: 0px 3.5vw 3.5vw 3.5vw;
+    }
+    
+    .tryptique-condensed {
+        gap: 3.5vw;
+        padding: 0px 3.5vw 3.5vw 3.5vw;
+    }
+
+    .close-up {
+        grid-column: 1/-1;
+    }
+
+    .detailed-explanations h2 {
+        margin-bottom: 3.5vw;
+    }
+
+    .description {
+        margin: 3.5vw;
+        gap: 3.5vw;
+    }
+
+    .detailed-visual {
+        grid-column: 1/-1;
+    }
+
+    .detailed-explanations {
+        grid-column: 1/-1;
+    }
+
+    .blank {
+        margin: 3.5vw;
+    }
+
+    .container {
+        margin: 80px 3.5vw 3.5vw 3.5vw;
+    }
+
+    h1 {
+        font-size: 25vw;
+    }
+    
+    h2{
+        font-size: 8vw;
+        }
+
+    h3{
+        font-size: 3vw;
+        }
+        
+    h4 {
+        font-size: 2vw;
+    }
+
+    #current-time {
+        font-size: 3vw;
+    }
+
+    .contact-link h3 {
+        margin: 0px 3.5vw 0px 0px;
+    }
+
+
+}
