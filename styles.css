@@ -487,6 +487,10 @@ a:hover {
         padding-bottom: 2vw;
     }
 
+    nav.nav2 h1 {
+        font-size: 20vh;
+    }
+
     .nav4 {
         margin: 2vw 0px 0px 0px;
     }
