@@ -55,3 +55,14 @@ document.addEventListener("DOMContentLoaded", function() {
     // Mettre à jour l'heure immédiatement
     updateTime();
  });
+
+    // Menu Burger
+
+document.addEventListener("DOMContentLoaded", function () {
+    const burgerMenu = document.getElementById("burger-menu");
+    const mobileNav = document.getElementById("mobile-nav");
+    
+    burgerMenu.addEventListener("click", function () {
+        mobileNav.classList.toggle("active");
+    });
+});
