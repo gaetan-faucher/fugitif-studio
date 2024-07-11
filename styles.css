@@ -187,7 +187,7 @@ section.top-page {
 
 
 
-.top-project-memoire, .top-project-worth, .top-project-toh, .top-project-gigantisme, .top-project-villette, .top-project-jeux, .top-project-virgil, .top-project-lama {
+.top-project-memoire, .top-project-worth, .top-project-habit, .top-project-toh, .top-project-gigantisme, .top-project-villette, .top-project-jeux, .top-project-virgil, .top-project-lama {
     display: flex;
     justify-content: flex-end;
     align-items: end;
@@ -337,7 +337,7 @@ a:hover {
     line-height: 0.85;
 }
 
-.performance, .toh, .gigantisme, .villette, .vacances, .virgil, .lama {
+.performance, .toh, .habit, .gigantisme, .villette, .vacances, .virgil, .lama {
     display: flex;
     border-bottom: 1px solid rgb(220, 220, 220);
 }
@@ -579,7 +579,7 @@ a:hover {
         display: contents;
     }
 
-    .detailed-visual .detailed-explanations {
+    .detailed-visual, .detailed-explanations {
         grid-column: span 3;
     }
 
@@ -661,6 +661,10 @@ a:hover {
         display: none;
     }
 
+    img {
+        border-radius: 6px;
+    }
+
     header.header {
         height: 45px;
         margin-top: 2vw;
@@ -709,10 +713,15 @@ a:hover {
     .aperçu {
         justify-content: space-between;
         width: 100%;
-        margin: 2vw;
+        height: 90px;
     }
 
-    .memoire a, .performance a, .toh a, .gigantisme a, .villette a, .vacances a, .virgil a, .lama a {
+    .aperçu img {
+        max-height: none;
+        width: 90px;
+    }
+
+    .memoire a, .performance a, .habit a, .toh a, .gigantisme a, .villette a, .vacances a, .virgil a, .lama a {
         flex-direction: column;
         margin: 3.5vw;
     }
