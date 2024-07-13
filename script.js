@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
 function updateImagesForMobile() {
     if (window.innerWidth <= 768) {
         document.querySelector('.big-visual[src="IMAGES/Projets/habit/HABIT_font-specimen.jpg"]').src = "IMAGES/Projets/habit/HABIT_font-specimen-mobile.jpg";
