@@ -556,6 +556,22 @@ a:hover {
     }
     /* fin menu burger */
 
+    .top-project-memoire .parallax-bg {
+        background-position: 80% center; /* Ajustement à droite */
+    }
+
+    .top-project-villette .parallax-bg {
+        background-position: 78% center; /* Ajustement à droite */
+    }
+
+    .top-project-virgil .parallax-bg {
+        background-position: 30% center; /* Ajustement à droite */
+    }
+
+    .top-project-lama .parallax-bg {
+        background-position: 64% center; /* Ajustement à droite */
+    }
+
     .entertainement {
         padding-left: 2vw;
         padding-right: 2vw;
@@ -695,6 +711,22 @@ a:hover {
 
     .nav4 {
         margin: 3.5vw 0px 0px 0px;
+    }
+
+    .top-project-memoire .parallax-bg {
+        background-position: 65% center; /* Ajustement à droite */
+    }
+
+    .top-project-toh .parallax-bg {
+        background-position: 50% center; /* Ajustement à droite */
+    }
+
+    .top-project-virgil .parallax-bg {
+        background-position: 15% center; /* Ajustement à droite */
+    }
+
+    .top-project-lama .parallax-bg {
+        background-position: 66% center; /* Ajustement à droite */
     }
 
     .entertainement {

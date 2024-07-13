@@ -66,3 +66,19 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileNav.classList.toggle("active");
     });
 });
+
+function updateImagesForMobile() {
+    if (window.innerWidth <= 768) {
+        document.querySelector('.big-visual[src="IMAGES/Projets/habit/HABIT_font-specimen.jpg"]').src = "IMAGES/Projets/habit/HABIT_font-specimen-mobile.jpg";
+        document.querySelector('.parallax-bg').style.backgroundImage = "url('IMAGES/Projets/habit/HABIT_COUV-double-affiche-mobile.jpg')";
+    } else {
+        document.querySelector('.big-visual[src="IMAGES/Projets/habit/HABIT_font-specimen-mobile.jpg"]').src = "IMAGES/Projets/habit/HABIT_font-specimen.jpg";
+        document.querySelector('.parallax-bg').style.backgroundImage = "url('IMAGES/Projets/habit/HABIT_COUV-double-affiche.jpg')";
+    }
+}
+
+    // Update on initial load
+    window.addEventListener('load', updateImagesForMobile);
+
+    // Update on resize
+    window.addEventListener('resize', updateImagesForMobile);
