@@ -551,7 +551,7 @@ a:hover {
     }
 
     .mobile-nav.active {
-        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         backdrop-filter: blur(10px);
         background: linear-gradient(to bottom, rgba(255, 0, 0, 0.9) 0%, rgba(255, 0, 0, 0) 100%);
     }
