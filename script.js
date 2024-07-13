@@ -82,3 +82,15 @@ function updateImagesForMobile() {
 
     // Update on resize
     window.addEventListener('resize', updateImagesForMobile);
+
+
+function setVhUnit() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+window.addEventListener('resize', setVhUnit);
+window.addEventListener('orientationchange', setVhUnit);
+document.addEventListener('DOMContentLoaded', setVhUnit);
+
+setVhUnit();

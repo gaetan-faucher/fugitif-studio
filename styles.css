@@ -150,6 +150,7 @@ nav.nav1 {
     display: none;
     flex-direction: column;
     justify-content: space-between;
+    align-self: center;
     width: 30px;
     height: 15px;
     z-index: 11;
@@ -197,7 +198,7 @@ section.top-page {
     display: flex;
     justify-content: flex-end;
     align-items: end;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     /* début du code pour l'effet parallax */
     position: relative;
     overflow: hidden;
@@ -250,6 +251,21 @@ a:hover {
     color: red;
     transition: 0.2s ease-in-out;
     /*cursor: pointer;*/
+}
+
+.like {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.like h3 {
+    text-align: right;
+    padding: 5px 10px;
+    background-color: red;
+    width: fit-content;
+    border-radius: 100px;
+    color: white;
 }
 
 .argumentation {
@@ -479,7 +495,11 @@ a:hover {
 @media (max-width: 768px) {
 
     header.header {
-        height: 50px;
+        height: 60px;
+    }
+
+    .logo {
+        margin-top: 5px;
     }
 
     nav.nav1 {
@@ -576,6 +596,14 @@ a:hover {
         padding-left: 2vw;
         padding-right: 2vw;
         padding-bottom: 4vw;
+    }
+
+    .like {
+        margin: 2vw 1.9vw;
+    }
+
+    .like h3 {
+        padding: 4px 10px;
     }
 
     .argumentation {
@@ -691,8 +719,15 @@ a:hover {
     }
 
     header.header {
-        height: 45px;
-        margin-top: 2vw;
+        height: 50px;
+    }
+
+    .burger-menu {
+        margin: 3.5vw;
+    }
+
+    .logo {
+        margin-top: 1px;
     }
 
     nav.nav1 {
@@ -765,6 +800,14 @@ a:hover {
     .memoire a, .performance a, .habit a, .toh a, .gigantisme a, .villette a, .vacances a, .virgil a, .lama a {
         flex-direction: column;
         margin: 3.5vw;
+    }
+
+    .like {
+        margin: 3.5vw 3vw;
+    }
+
+    .like h3 {
+        padding: 5px 10px;
     }
 
     .argumentation {
