@@ -498,6 +498,10 @@ a:hover {
         height: 60px;
     }
 
+    .header:hover {
+            background-color: rgba(255, 255, 255, 0);
+    }
+
     .logo {
         margin-top: 5px;
     }
@@ -520,6 +524,33 @@ a:hover {
     /* menu burger */
     .burger-menu {
         display: flex;
+        background-color: #fff; /* Fond blanc */
+        padding: 15px 30px; /* Padding pour créer de l'espace autour des barres */
+        border-radius: 30px; /* Coins arrondis */
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); Ombre */
+        cursor: pointer; /* Curseur en forme de main pour indiquer que c'est cliquable */
+        position: relative; /* Position relative pour positionner les barres */
+        width: 50px; /* Ajuster la largeur du conteneur */
+        height: 40px; /* Ajuster la hauteur du conteneur */
+        align-items: center; /* Centre verticalement les éléments enfants */
+        justify-content: center; /* Centre horizontalement les éléments enfants */
+    }
+
+    .burger-menu .bar {
+        height: 2.5px; /* Augmentez la hauteur pour plus de visibilité */
+        width: 30px;
+        background-color: rgb(255, 0, 0); /* Couleur des barres */
+        border-radius: 5px; /* Coins arrondis pour les barres */
+        position: absolute; /* Position absolue pour les barres */
+        z-index: 1; /* Assure que les barres sont au-dessus du fond blanc */
+    }
+
+    .burger-menu .bar:nth-child(1) {
+        top: 30%; /* Positionne la première barre en haut */
+    }
+
+    .burger-menu .bar:nth-child(2) {
+        bottom: 30%; /* Positionne la deuxième barre en bas */
     }
 
     nav.nav1 h3 {
@@ -714,12 +745,8 @@ a:hover {
         display: none;
     }
 
-    img {
-        border-radius: 6px;
-    }
-
     header.header {
-        height: 50px;
+        height: 65px;
     }
 
     .burger-menu {
