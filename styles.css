@@ -502,8 +502,21 @@ a:hover {
             background-color: rgba(255, 255, 255, 0);
     }
 
+    .bouton-logo {
+        position: relative;
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 45px;
+        padding: 6px 15px;
+        border-radius: 30px;
+        z-index: 200;
+    }
+
     .logo {
-        margin-top: 5px;
+        position: absolute;
+        top: 10px;
     }
 
     nav.nav1 {
@@ -512,9 +525,7 @@ a:hover {
     }
 
     nav.nav2 {
-        padding-left: 2vw;
-        padding-right: 2vw;
-        padding-bottom: 2vw;
+        padding: 2vw;
     }
 
     .nav4 {
@@ -528,7 +539,6 @@ a:hover {
         padding: 15px 30px; /* Padding pour créer de l'espace autour des barres */
         border-radius: 30px; /* Coins arrondis */
         /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); Ombre */
-        cursor: pointer; /* Curseur en forme de main pour indiquer que c'est cliquable */
         position: relative; /* Position relative pour positionner les barres */
         width: 50px; /* Ajuster la largeur du conteneur */
         height: 40px; /* Ajuster la hauteur du conteneur */
