@@ -503,20 +503,21 @@ a:hover {
     }
 
     .bouton-logo {
+        display: flex;
         position: relative;
         background-color: #fff;
         align-items: center;
         justify-content: center;
         height: 40px;
-        width: 45px;
-        padding: 6px 15px;
-        border-radius: 30px;
+        width: 40px;
+        border-radius: 20px;
         z-index: 200;
     }
 
     .logo {
         position: absolute;
-        top: 10px;
+        align-items: center;
+        justify-content: center;
     }
 
     nav.nav1 {
@@ -535,24 +536,25 @@ a:hover {
     /* menu burger */
     .burger-menu {
         display: flex;
-        background-color: #fff; /* Fond blanc */
-        padding: 15px 30px; /* Padding pour créer de l'espace autour des barres */
-        border-radius: 30px; /* Coins arrondis */
+        position: relative;
+        background-color: #fff;
+        margin-top: 3.5vw;
+        padding: 15px 30px;
+        border-radius: 20px;
         /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); Ombre */
-        position: relative; /* Position relative pour positionner les barres */
-        width: 50px; /* Ajuster la largeur du conteneur */
-        height: 40px; /* Ajuster la hauteur du conteneur */
+        width: 50px;
+        height: 40px;
         align-items: center; /* Centre verticalement les éléments enfants */
         justify-content: center; /* Centre horizontalement les éléments enfants */
     }
 
     .burger-menu .bar {
-        height: 2.5px; /* Augmentez la hauteur pour plus de visibilité */
+        height: 2px;
         width: 30px;
-        background-color: rgb(255, 0, 0); /* Couleur des barres */
-        border-radius: 5px; /* Coins arrondis pour les barres */
-        position: absolute; /* Position absolue pour les barres */
-        z-index: 1; /* Assure que les barres sont au-dessus du fond blanc */
+        background-color: rgb(255, 0, 0);
+        border-radius: 5px;
+        position: absolute;
+        z-index: 1;
     }
 
     .burger-menu .bar:nth-child(1) {
@@ -759,20 +761,16 @@ a:hover {
         height: 65px;
     }
 
-    .burger-menu {
-        margin: 3.5vw;
-    }
-
-    .logo {
-        margin-top: 1px;
-    }
-
     nav.nav1 {
         padding: 3vw;
     }
 
     .home-link {
         display: none;
+    }
+
+    .burger-menu {
+        margin-right: 3.5vw;
     }
 
     nav.nav2 {
