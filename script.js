@@ -10,7 +10,22 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('mouseenter', () => cursor.classList.add('hover-link'));
         link.addEventListener('mouseleave', () => cursor.classList.remove('hover-link'));
     });
+
+    // Add event listeners to .aperçu img elements for fade effect
+    document.querySelectorAll('.aperçu img').forEach(img => {
+        img.addEventListener('mouseenter', () => {
+            img.classList.remove('fade-in');
+            img.classList.add('fade-out');
+        });
+        img.addEventListener('mouseleave', () => {
+            img.classList.remove('fade-out');
+            img.classList.add('fade-in');
+        });
+    });
 });
+
+
+
 
 // Début effet parallax
 
