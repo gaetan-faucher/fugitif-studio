@@ -216,7 +216,7 @@ section.top-page {
 
 
 
-.top-project-memoire, .top-project-worth, .top-project-habit, .top-project-toh, .top-project-gigantisme, .top-project-villette, .top-project-jeux, .top-project-virgil, .top-project-lama {
+.top-project-solar, .top-project-memoire, .top-project-worth, .top-project-habit, .top-project-toh, .top-project-gigantisme, .top-project-villette, .top-project-jeux, .top-project-virgil, .top-project-lama {
     display: flex;
     justify-content: flex-end;
     align-items: end;
@@ -231,7 +231,7 @@ section.top-page {
     background-repeat: no-repeat; /* Évite la répétition de l'image */
 }
 
-.top-project-memoire, .top-project-villette, .top-project-virgil, .top-project-lama {
+.top-project-solar, .top-project-memoire, .top-project-villette, .top-project-virgil, .top-project-lama {
     color: white;
 }
 
@@ -366,7 +366,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.memoire {
+.villette {
     display: flex;
     border-top: 1px solid rgb(220, 220, 220);
     border-bottom: 1px solid rgb(220, 220, 220);
@@ -381,7 +381,7 @@ a:hover {
     line-height: 0.85;
 }
 
-.performance, .toh, .habit, .gigantisme, .villette, .vacances, .virgil, .lama {
+.solar, .memoire, .performance, .toh, .habit, .gigantisme, .villette, .vacances, .virgil, .lama {
     display: flex;
     border-bottom: 1px solid rgb(220, 220, 220);
 }
@@ -656,6 +656,10 @@ a:hover {
         background-position: 80% center; /* Ajustement à droite */
     }
 
+    .top-project-solar .parallax-bg {
+        background-position: 90% center; /* Ajustement à droite */
+    }
+
     .top-project-villette .parallax-bg {
         background-position: 78% center; /* Ajustement à droite */
     }
@@ -865,7 +869,7 @@ a:hover {
         width: 90px;
     }
 
-    .memoire a, .performance a, .habit a, .toh a, .gigantisme a, .villette a, .vacances a, .virgil a, .lama a {
+    .solar a, .memoire a, .performance a, .habit a, .toh a, .gigantisme a, .villette a, .vacances a, .virgil a, .lama a {
         flex-direction: column;
         margin: 3.5vw;
     }
