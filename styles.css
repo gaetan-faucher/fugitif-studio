@@ -99,6 +99,13 @@ h4 {
     font-size: 11px;
 }
 
+h5 {
+    font-family: 'Switzer-Regular', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Regular */
+    font-size: 3vw;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -322,6 +329,25 @@ a:hover {
 
 .big-visual {
     grid-column: 1/-1;
+}
+
+.focus {
+    display: flex;
+    margin: 25px;
+    gap: 25px;
+}
+
+.focus-visual {
+    width: 50%;
+    max-height: 100vh;
+}
+
+.focus-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    align-content: end;
 }
 
 .detailed-visual {
@@ -716,6 +742,11 @@ a:hover {
         grid-column: span 3;
     }
 
+    .focus {
+        margin: 2vw;
+        gap: 2vw;
+    }
+
     .blank {
         margin: 2vw;
     }
@@ -917,6 +948,21 @@ a:hover {
     .detailed-explanations {
         grid-column: 1/-1;
         margin: 10vw 0vw;
+    }
+
+    .focus {
+        flex-direction: column;
+        margin: 3.5vw;
+        gap: 3.5vw;
+    }
+
+    .focus-visual {
+        width: 100%;
+    }
+    
+    .focus-text {
+        gap: 10vw;
+        width: 100%;
     }
 
     .blank {
