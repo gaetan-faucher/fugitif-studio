@@ -366,6 +366,11 @@ a:hover {
     margin-bottom: 25px;
 }
 
+.project-detail {
+    grid-column: 2 / span 2;
+    margin: 30vh 0px;
+}
+
 .close-up {
     grid-column: span 3;
 }
