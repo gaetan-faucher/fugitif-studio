@@ -747,6 +747,10 @@ a:hover {
         grid-column: span 3;
     }
 
+    .project-detail {
+        grid-column: 2 / span 4;
+    }
+
     .focus {
         margin: 2vw;
         gap: 2vw;

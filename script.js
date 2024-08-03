@@ -88,10 +88,12 @@ function updateImagesForMobile() {
         document.querySelector('.big-visual[src="IMAGES/Projets/habit/HABIT_font-specimen.jpg"]').src = "IMAGES/Projets/habit/HABIT_font-specimen-mobile.jpg";
         document.querySelector('.parallax-bg').style.backgroundImage = "url('IMAGES/Projets/habit/HABIT_COUV-double-affiche-mobile.jpg')";
         document.querySelector('.big-visual[src="IMAGES/Projets/habit/HABIT_signaletique-magasin.jpg').src = "IMAGES/Projets/habit/HABIT_signaletique-magasin-mobile.jpg"
+        document.querySelector('.big-visual[src="IMAGES/Projets/habit/HABIT_logotype-couleurs.jpg').src = "IMAGES/Projets/habit/HABIT_logotype-couleurs-mobile.jpg"
     } else {
         document.querySelector('.big-visual[src="IMAGES/Projets/habit/HABIT_font-specimen-mobile.jpg"]').src = "IMAGES/Projets/habit/HABIT_font-specimen.jpg";
         document.querySelector('.parallax-bg').style.backgroundImage = "url('IMAGES/Projets/habit/HABIT_COUV-double-affiche.jpg')";
-                document.querySelector('.big-visual[src="IMAGES/Projets/habit/HABIT_signaletique-magasin-mobile.jpg').src = "IMAGES/Projets/habit/HABIT_signaletique-magasin.jpg"
+        document.querySelector('.big-visual[src="IMAGES/Projets/habit/HABIT_signaletique-magasin-mobile.jpg').src = "IMAGES/Projets/habit/HABIT_signaletique-magasin.jpg"
+        document.querySelector('.big-visual[src="IMAGES/Projets/habit/HABIT_logotype-couleurs-mobile.jpg').src = "IMAGES/Projets/habit/HABIT_logotype-couleurs.jpg"
     }
 }
 
