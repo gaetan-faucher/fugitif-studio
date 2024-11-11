@@ -25,9 +25,14 @@ video {
     max-width: 100%;
 }
 
-::selection {
-    background-color: rgb(255, 0, 0);
+/*::selection {
+     background-color: rgb(255, 0, 0);
     color: rgb(255, 255, 255);
+} */
+
+::selection {
+    color: transparent;
+    text-shadow: 0 0 var(--selection-shadow, 0px rgba(0, 0, 0, 0.5));
 }
 
 /* Styles pour le curseur personnalisé */

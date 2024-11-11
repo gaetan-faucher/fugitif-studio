@@ -114,3 +114,48 @@ window.addEventListener('orientationchange', setVhUnit);
 document.addEventListener('DOMContentLoaded', setVhUnit);
 
 setVhUnit();
+
+
+
+document.addEventListener('selectionchange', () => {
+    const selection = document.getSelection();
+    if (!selection.rangeCount) return;
+
+    // Obtenir la plage et l'élément sélectionné
+    const range = selection.getRangeAt(0);
+    const selectedText = range.cloneContents();
+    const span = document.createElement('span');
+    span.appendChild(selectedText);
+
+    // Appliquer le span temporaire pour obtenir les styles de l'élément sélectionné
+    document.body.appendChild(span);
+    const computedStyles = window.getComputedStyle(span);
+    const textSize = parseFloat(computedStyles.fontSize);
+    const textColor = computedStyles.color;
+    span.remove();
+
+    // Convertir la couleur du texte en composants rgba
+    const rgbaTextColor = textColor.replace(/[^\d,]/g, '').split(',');
+    const intensity = Math.sqrt(
+        0.299 * rgbaTextColor[0] ** 2 +
+        0.587 * rgbaTextColor[1] ** 2 +
+        0.114 * rgbaTextColor[2] ** 2
+    );
+
+    // Définir la couleur de l'ombre en fonction de l'intensité
+    let shadowColor;
+    if (intensity > 1) {
+        // Texte clair (ex. : blanc) : appliquer une ombre légère
+        shadowColor = 'rgba(255, 255, 255, 0.5)';
+    } 
+    else {
+        // Texte sombre : garder l'ombre sombre
+        shadowColor = 'rgba(0, 0, 0)';
+    }
+
+    // Conserver le flou proportionnel à la taille du texte
+    const blurSize = textSize / 2;
+
+    // Appliquer dynamiquement les styles de sélection
+    document.documentElement.style.setProperty('--selection-shadow', `${blurSize}px ${shadowColor}`);
+});
