@@ -101,7 +101,8 @@ h4 {
     font-family: 'Switzer-Regular', sans-serif;
     font-optical-sizing: auto;
     font-weight: 400; /* Regular */
-    font-size: 11px;
+    font-size: 0.9vw;
+    color: rgb(65, 65, 65);
 }
 
 h5 {
@@ -250,9 +251,9 @@ section.top-page {
 nav.nav2 {
     align-items: end;
     justify-content: space-between;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 .entertainement {
@@ -262,9 +263,9 @@ nav.nav2 {
     position: relative;
     z-index: 2;
     /* fin du code parallax */
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 .nav2 h1 {
@@ -290,7 +291,7 @@ a:hover {
 .like {
     display: flex;
     flex-direction: column;
-    margin: 25px;
+    margin: 20px;
 }
 
 .like h3 {
@@ -320,8 +321,8 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: space-between;
-    gap: 25px;
-    padding: 0px 25px 25px 25px;
+    gap: 10px;
+    padding: 0px 20px 20px 20px;
 }
 
 .tryptique img, .tryptique video,  .tryptique-condensed img {
@@ -330,6 +331,57 @@ a:hover {
 
 .tryptique-cover {
     grid-column: span 2;
+}
+
+.banniere-credits {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    gap: 60px;
+}
+
+.project-description {
+    /* grid-column: 1/4; */
+    width: 50%;
+}
+
+.credits {
+    /* grid-column: 4/5; */
+    width: 30%;
+}
+
+.similar-project {
+    /* grid-column: 7/-1; */
+    width: 20%;
+    gap: 15px;
+}
+
+/*.similar-project a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}*/
+
+.similar-project img {
+    display: flex;
+    flex-direction: column;
+    max-height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.similar-project img :first-child {
+    grid-row: 1/2;
+}
+
+.similar-project img :last-child {
+    grid-row: 2/3;
 }
 
 .big-visual {
