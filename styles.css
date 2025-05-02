@@ -94,7 +94,7 @@ h3{
     font-family: 'Switzer-Regular', sans-serif;
     font-optical-sizing: auto;
     font-weight: 400; /* Regular */
-    font-size: 17px;
+    font-size: 0.9vw;
     }
     
 h4 {
@@ -141,7 +141,7 @@ nav {
     list-style: none;
 }
 
-.home-link, .bouton-logo, .bouton-contact {
+/*.home-link, .bouton-logo, .bouton-contact {
     display: flex;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(5px);
@@ -154,7 +154,7 @@ nav {
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     z-index: 200;
-}
+}*/
 
 .home-link:active, .bouton-contact:active {
     box-shadow: none;
@@ -174,10 +174,11 @@ nav.nav1 .bouton-logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    transform: translateY(-40%);
 }
 
 .logo {
-    height: 20px;
+    height: 12px;
 }
 
 /* menu burger */
@@ -552,7 +553,7 @@ a:hover {
     font-family: 'Switzer-Regular', sans-serif;
     font-optical-sizing: auto;
     font-weight: 400; /* Regular */
-    font-size: 17px;
+    font-size: 0.9vw;
     color: red;
 }
 
