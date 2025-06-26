@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('img:not([loading]), iframe:not([loading])').forEach(el => {
+    el.setAttribute('loading', 'lazy');
+  });
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     const cursor = document.getElementById('custom-cursor');
 
@@ -66,9 +72,6 @@ document.addEventListener("DOMContentLoaded", function() {
         
     // Mise à jour de l'heure toutes les secondes
     setInterval(updateTime, 1000);
-        
-    // Mettre à jour l'heure immédiatement
-    updateTime();
  });
 
     // Menu Burger
@@ -158,4 +161,22 @@ document.addEventListener('selectionchange', () => {
 
     // Appliquer dynamiquement les styles de sélection
     document.documentElement.style.setProperty('--selection-shadow', `${blurSize}px ${shadowColor}`);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const figures = document.querySelectorAll('figure');
+
+  let numero = 1;
+
+  figures.forEach(fig => {
+    // Crée dynamiquement le <h4> avec le bon format
+    const h4 = document.createElement('h4');
+    h4.textContent = `${numero.toString().padStart(3, '0')}.`;
+
+    // L’insère avant l’image
+    const img = fig.querySelector('img');
+    fig.insertBefore(h4, img);
+
+    numero++;
+  });
 });
