@@ -475,6 +475,7 @@ figure.col-2-10 {
 .focus-visual {
     grid-column: 7/10;
     width: 100%;
+
 }
 
 .focus-text {
@@ -737,7 +738,7 @@ figure.col-2-10 {
 
 
 @media (max-width: 768px) {
-
+    
     header.header {
         height: 60px;
     }
@@ -911,6 +912,13 @@ figure.col-2-10 {
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
     margin: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3.5vw;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
     .container {
@@ -934,13 +942,22 @@ figure.col-2-10 {
         text-align: center;      /* centre le texte si besoin */
     }
 
+    .focus-text {
+        text-align: center;
+    }
+
     .focus-text h2 {
-        margin-top: 20px;
+        margin-top: 50px;
+    }
+
+    .focus-text, .focus-visual {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .focus-visual {
-        grid-column: 2/4;
-        width: 100%;
+        grid-column: 2/5;
         margin-top: 50px;
     }
 
@@ -975,7 +992,7 @@ figure.col-2-10 {
 
 
 @media (max-width: 480px) {
-
+    
     .custom-cursor {
         display: none;
     }
