@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: 'Switzer-Regular', sans-serif;
     overflow-x: hidden;
 }
@@ -73,7 +73,7 @@ h1 {
         "SOFT"0,
         /* arrondis */
         "WONK"0;
-    font-size: clamp(140px, 15vw, 250px);
+    font-size: clamp(125px, 15vw, 250px);
     line-height: 0.75;
     /*cursor: default; */
 }
@@ -81,7 +81,7 @@ h1 {
 h2 {
     font-family: "Fraunces", serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 180;
     /* light */
     font-style: italic;
     font-variation-settings:
@@ -466,21 +466,31 @@ figure.col-2-10 {
 }
 
 .focus {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 50px;
     margin: 25px;
-    gap: 25px;
 }
 
 .focus-visual {
-    width: 50%;
+    grid-column: 7/10;
+    width: 100%;
 }
 
 .focus-text {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    justify-content: space-between;
-    align-content: end;
+    grid-column: span 5;
+    width: 30em;
+}
+
+.focus-text h2 {
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.focus-text h3 {
+    font-weight: 300;
 }
 
 .project-detail {
@@ -582,13 +592,19 @@ figure.col-2-10 {
 }
 
 .footer {
+    position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     top: 0;
     flex-shrink: 0;
-    /* border-top: 1px solid rgb(220, 220, 220); */
-    background: linear-gradient(white, red);
+    background-image: url('IMAGES/Footer/WhatsApp\ Image\ 2025-06-28\ at\ 00.48.34.jpeg'); /* ou ta propre image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
+    overflow: hidden;
 }
 
 .footer a {
@@ -598,6 +614,41 @@ figure.col-2-10 {
 .footer a:hover {
     color: white;
     transition: 0.2s ease-in;
+}
+
+/*.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0));
+    z-index: 1;
+    pointer-events: none;
+}*/
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.footer-content a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.footer-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .container {
@@ -622,37 +673,39 @@ figure.col-2-10 {
     font-family: 'Switzer-Regular', sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    /* Regular */
     font-size: clamp(10px, 2vw, 13px);
-    color: red;
+    color: rgb(255, 255, 255);
 }
 
 .clock {
-    grid-column: span 3;
-    color: red;
+    text-align: left;
+    flex: 1;
+    color: rgb(255, 255, 255);
 }
 
 .links1 {
     flex-direction: column;
-    grid-column: 4/5;
-}
-
-.links2 {
-    flex-direction: column;
-    grid-column: 2 5/6;
-    color: red;
-    line-height: 1.3;
+    flex: 1;
+    text-align: right;
 }
 
 .links3 {
-    flex-direction: column;
-    grid-column: 6/-1;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
     align-items: flex-end;
+    list-style: none;
+    padding: 0;
 }
 
 .nav4 {
-    margin: 25px 0px 0px 0px;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin: 0;
 }
 
 .bottom-footer {
@@ -671,7 +724,6 @@ figure.col-2-10 {
 
 .contact-link h3 {
     width: 50vw;
-    /*cursor: default;*/
     margin: 0px 25px 0px 0px;
 }
 
@@ -831,6 +883,10 @@ figure.col-2-10 {
         margin: 25px;
     }
 
+    .argumentation h3 {
+        grid-column: span 5;
+    }
+
     .tryptique,
     .tryptique-condensed {
         gap: 2vw;
@@ -851,32 +907,41 @@ figure.col-2-10 {
         grid-column: 2 / span 4;
     }
 
-    .focus {
-        margin: 2vw;
-        gap: 2vw;
-    }
+.focus {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin: 15px;
+}
 
     .container {
         margin: 80px 2vw 2vw 2vw;
     }
 
-    .links1 {
-        grid-column: 1/4;
-        grid-row: 2/3;
-    }
-
-    .links2 {
-        grid-column: 4/-1;
-        align-items: flex-end;
-    }
-
-    .links3 {
-        grid-column: 4/-1;
-        grid-row: 2/3;
-    }
-
     .all-links {
-        gap: 4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;     /* centre horizontalement */
+        justify-content: center; /* facultatif */
+        max-width: 100%;
+        margin: 0 auto;          /* centre la div si taille réduite */
+        padding: 0 clamp(10px, 4vw, 25px);
+        box-sizing: border-box;
+    }
+
+    .all-links > * {
+        margin-bottom: 25px;     /* espace entre les éléments */
+        width: 100%;
+        text-align: center;      /* centre le texte si besoin */
+    }
+
+    .focus-text h2 {
+        margin-top: 20px;
+    }
+
+    .focus-visual {
+        grid-column: 2/4;
+        width: 100%;
+        margin-top: 50px;
     }
 
     .contact-link {
@@ -892,6 +957,14 @@ figure.col-2-10 {
 
     .contact-link img {
         width: 100%;
+    }
+
+    .bottom-footer h1 {
+    font-size: clamp(24vw, 26vw, 28vw);
+    word-break: break-word;
+    line-height: 1;
+    overflow-wrap: break-word;
+    text-align: center;
     }
 
 
@@ -913,6 +986,7 @@ figure.col-2-10 {
 
     nav.nav1 {
         padding: 3vw;
+        height: initial;
     }
 
     .home-link {
@@ -927,10 +1001,6 @@ figure.col-2-10 {
         padding-left: 3.5vw;
         padding-right: 3.5vw;
         padding-bottom: 3.5vw;
-    }
-
-    .nav4 {
-        margin: 3.5vw 0px 0px 0px;
     }
 
     .top-project-memoire .parallax-bg {
@@ -963,7 +1033,7 @@ figure.col-2-10 {
         flex-direction: column;
         align-items: flex-start;
         margin: 0vw 0vw 3.5vw 0vw;
-        gap: 3.5vw;
+        gap: 0.5vw;
         width: 100%;
     }
 
@@ -977,13 +1047,14 @@ figure.col-2-10 {
 
     .aperçu {
         justify-content: space-between;
+        margin: 0vw 0vw 0.5vw 0vw;
         width: 100%;
-        height: 90px;
+        height: 60px;
     }
 
     .aperçu img {
         max-height: none;
-        width: 90px;
+        width: 60px;
     }
 
     .solar a,
@@ -1002,8 +1073,12 @@ figure.col-2-10 {
 
     .argumentation {
         gap: 3.5vw;
-        margin: 10vw 3.5vw 10vw 3.5vw;
+        margin: 25vw 3.5vw 25vw 3.5vw;
         flex-direction: column;
+    }
+
+    .argumentation h3 {
+            grid-column: span 5;
     }
 
     .tryptique,
@@ -1020,21 +1095,6 @@ figure.col-2-10 {
         grid-column: 1/-1;
     }
 
-    .focus {
-        flex-direction: column;
-        margin: 3.5vw;
-        gap: 3.5vw;
-    }
-
-    .focus-visual {
-        width: 100%;
-    }
-
-    .focus-text {
-        gap: 10vw;
-        width: 100%;
-    }
-
     .blank {
         margin: 3.5vw;
     }
@@ -1045,19 +1105,6 @@ figure.col-2-10 {
 
     .contact-link h3 {
         margin: 0px 3.5vw 0px 0px;
-    }
-
-    .links1,
-    .links3 {
-        grid-column: 1/-1;
-        grid-row: 2/3;
-        margin: 10vw 0vw 10vw 0vw;
-    }
-
-    .links2 {
-        align-items: flex-start;
-        grid-column: 1/-1;
-        grid-row: 3/4;
     }
 
 
