@@ -12,10 +12,28 @@ document.addEventListener('DOMContentLoaded', function() {
         cursor.style.top = `${e.clientY}px`;
     });
 
-    document.querySelectorAll('a').forEach(link => {
-        link.addEventListener('mouseenter', () => cursor.classList.add('hover-link'));
-        link.addEventListener('mouseleave', () => cursor.classList.remove('hover-link'));
+const links = document.querySelectorAll('a');
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector(".projets-container");
+  const projets = container.querySelectorAll(".projet");
+
+  projets.forEach(projet => {
+    projet.addEventListener("mouseenter", () => {
+      container.classList.add("hovering");
     });
+    projet.addEventListener("mouseleave", () => {
+      container.classList.remove("hovering");
+    });
+  });
+});
+
+
+links.forEach(link => {
+  link.addEventListener('mouseenter', () => cursor.classList.add('hover-link'));
+  link.addEventListener('mouseleave', () => cursor.classList.remove('hover-link'));
+});
 
     // Add event listeners to .aperçu img elements for fade effect
     document.querySelectorAll('.aperçu img').forEach(img => {
